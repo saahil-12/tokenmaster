@@ -37,7 +37,7 @@ contract TokenMaster is ERC721 {
     }
 
     function list(
-        string memory _name,
+          string memory _name,
         uint256 _cost,
         uint256 _maxTickets,
         string memory _date,
@@ -52,7 +52,7 @@ contract TokenMaster is ERC721 {
             _maxTickets,
             _maxTickets,
             _date,
-            _time,
+            _time, 
             _location
         );
     }
@@ -66,7 +66,7 @@ contract TokenMaster is ERC721 {
         require(msg.value >= occasions[_id].cost);
 
         // Require that the seat is not taken, and the seat exists...
-        require(seatTaken[_id][_seat] == address(0));
+        require(seatTaken[_id][_seat] == address(0));  
         require(_seat <= occasions[_id].maxTickets);
 
         occasions[_id].tickets -= 1; // <-- Update ticket count
@@ -90,6 +90,7 @@ contract TokenMaster is ERC721 {
     }
 
     function withdraw() public onlyOwner {
+
         (bool success, ) = owner.call{value: address(this).balance}("");
         require(success);
     }

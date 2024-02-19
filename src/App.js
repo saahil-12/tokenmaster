@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 
 // Components
 import Navigation from './components/Navigation'
-import Sort from './components/Sort'
+// import Sort from './components/Sort'
 import Card from './components/Card'
 import SeatChart from './components/SeatChart'
 
@@ -60,7 +60,7 @@ function App() {
         <h2 className="header__title"><strong>Event</strong> Tickets</h2>
       </header>
 
-      <Sort />
+      {/* <Sort /> */}
 
       <div className='cards'>
         {occasions.map((occasion, index) => (

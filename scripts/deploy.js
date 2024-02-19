@@ -25,7 +25,7 @@ async function main() {
       tickets: 0,
       date: "May 31",
       time: "6:00PM EST",
-      location: "Miami-Dade Arena - Miami, FL"
+      location: "Miami-Dade Arena - Miami, FL" 
     },
     {
       name: "ETH Tokyo",
