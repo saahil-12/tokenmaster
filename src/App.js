@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 
 // Components
 import Navigation from './components/Navigation'
-// import Sort from './components/Sort'
+import Sort from './components/Sort'
 import Card from './components/Card'
 import SeatChart from './components/SeatChart'
 
